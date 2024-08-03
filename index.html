@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Perdón</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Página de portada -->
+        <div id="cover" class="cover">
+            <h1>Lo lamento mucho mi amor :(</h1>
+            <img src="right-arrow.png" alt="Flecha" class="arrow" onclick="showEnvelope()">
+        </div>
+
+        <!-- Sobre -->
+        <div id="envelope" class="envelope">
+            <img src="sobre.png" alt="Sobre" onclick="showLetter()">
+        </div>
+
+        <!-- Carta -->
+        <div id="letter" class="letter">
+            <div class="letter-content">
+                <p>Hola mi vida hermosa, sabes siempre todo lo que pasa entre nosotros me deja pensativo y me hace reflexionar mucho sobre lo que he hecho, encerio dare lo mejor de mi para entender lo que me digas, aprovechare las oportunidades y no volvere a cometer el mismo error, se que hice que pareciera como si no me importaran las oportunidades que me das lo lamento. Y perdon profundamente por haberte dejado ayer no fue de mala persona o enojado no jamas me enojaria contigo mucho menos cuando se que yo fui el que daño las cosas, por favor amor perdoname te amo con todo mi corazon y ser.</p>
+            </div>
+            <img src="right-arrow.png" alt="Flecha" class="arrow" onclick="showFinal()">
+        </div>
+
+        <!-- Mensaje Final -->
+        <div id="final" class="final">
+            <h1>¿Me perdonas?</h1>
+            <button class="yes" onclick="showMessage('yes')">Sís?</button>
+            <button class="no" onclick="showMessage('no')">No? :(</button>
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
